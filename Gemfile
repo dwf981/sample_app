@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'childprocess', '0.3.6'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -22,8 +23,8 @@ gem 'jquery-rails'
 
 group :test do
   gem 'capybara', '1.1.2'
-  gem 'rb-inotify', '0.8.8'
-  gem 'libnotify', '0.5.9'
+  gem 'rb-inotify', '~> 0.9'
+  gem 'libnotify'
 end
 
 group :production do
